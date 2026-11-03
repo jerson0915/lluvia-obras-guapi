@@ -1,0 +1,47 @@
+# Tarea automática: cada día descarga los datos, recalcula el semáforo
+# y guarda el resultado en el repositorio. GitHub Pages publica docs/ solo.
+name: Actualizar datos
+
+on:
+  schedule:
+    # Todos los días a las 10:30 UTC = 5:30 a. m. en Colombia.
+    # GitHub puede retrasar las tareas programadas unos minutos.
+    - cron: "30 10 * * *"
+  # Permite ejecutarla a mano desde la pestaña Actions.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copiar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Descargar datos
+        env:
+          # Opcional. Si creas el secreto SOCRATA_APP_TOKEN, datos.gov.co responde con menos límites.
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+        run: python scripts/descargar_datos.py
+
+      - name: Procesar datos
+        run: python scripts/procesar_datos.py
+
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs/datos.json
+          if git diff --cached --quiet; then
+            echo "No hay cambios."
+          else
+            git commit -m "Actualizar datos $(date -u +%Y-%m-%d)"
+            git push
+          fi

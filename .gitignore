@@ -1,0 +1,12 @@
+# Archivos de Python que no se suben
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Archivos del sistema y del editor
+.DS_Store
+.vscode/
+
+# Secretos: nunca se suben
+.env

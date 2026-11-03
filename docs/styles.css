@@ -1,0 +1,269 @@
+:root {
+  color-scheme: light;
+  --fondo: #f6f5f1;
+  --superficie: #fcfcfb;
+  --borde: #e2e0d8;
+  --texto: #0b0b0b;
+  --texto-2: #52514e;
+  --texto-3: #77766f;
+  --rejilla: #e8e6df;
+  --acento: #1c5cab;
+  --lluvia: #2a78d6;
+  --lluvia-suave: #b7d3f6;
+  --jornada: rgba(42, 120, 214, 0.07);
+  --verde: #0ca30c;
+  --amarillo: #fab219;
+  --rojo: #d03b3b;
+  --verde-texto: #006300;
+  --amarillo-texto: #7a5300;
+  --rojo-texto: #a32626;
+  --seq-0: #f0efec;
+  --seq-1: #cde2fb;
+  --seq-2: #9ec5f4;
+  --seq-3: #6da7ec;
+  --seq-4: #3987e5;
+  --seq-5: #256abf;
+  --seq-6: #184f95;
+  --seq-7: #0d366b;
+  --sombra: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --fondo: #121211;
+    --superficie: #1a1a19;
+    --borde: #2f2f2c;
+    --texto: #f0efec;
+    --texto-2: #c3c2b7;
+    --texto-3: #96958c;
+    --rejilla: #2a2a27;
+    --acento: #86b6ef;
+    --lluvia: #3987e5;
+    --lluvia-suave: #1c5cab;
+    --jornada: rgba(57, 135, 229, 0.10);
+    --verde-texto: #5fd35f;
+    --amarillo-texto: #fab219;
+    --rojo-texto: #f08585;
+    --seq-0: #383835;
+    --seq-1: #104281;
+    --seq-2: #184f95;
+    --seq-3: #256abf;
+    --seq-4: #3987e5;
+    --seq-5: #6da7ec;
+    --seq-6: #9ec5f4;
+    --seq-7: #cde2fb;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --fondo: #121211;
+  --superficie: #1a1a19;
+  --borde: #2f2f2c;
+  --texto: #f0efec;
+  --texto-2: #c3c2b7;
+  --texto-3: #96958c;
+  --rejilla: #2a2a27;
+  --acento: #86b6ef;
+  --lluvia: #3987e5;
+  --lluvia-suave: #1c5cab;
+  --jornada: rgba(57, 135, 229, 0.10);
+  --verde-texto: #5fd35f;
+  --amarillo-texto: #fab219;
+  --rojo-texto: #f08585;
+  --seq-0: #383835;
+  --seq-1: #104281;
+  --seq-2: #184f95;
+  --seq-3: #256abf;
+  --seq-4: #3987e5;
+  --seq-5: #6da7ec;
+  --seq-6: #9ec5f4;
+  --seq-7: #cde2fb;
+}
+
+* { box-sizing: border-box; }
+
+.icono { width: 18px; height: 18px; vertical-align: -4px; flex: none; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contenedor { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+header { padding: 28px 0 8px; }
+header h1 { margin: 0; font-size: 1.6rem; line-height: 1.2; }
+header p { margin: 6px 0 0; color: var(--texto-2); }
+.actualizado { font-size: 0.875rem; color: var(--texto-3); margin-top: 4px; }
+
+.aviso {
+  margin: 16px 0;
+  padding: 10px 14px;
+  border-left: 4px solid var(--amarillo);
+  background: var(--superficie);
+  border-radius: 6px;
+  font-size: 0.925rem;
+  color: var(--texto-2);
+}
+.aviso a { color: var(--acento); }
+
+nav.pestanas {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--borde);
+  margin: 8px 0 20px;
+  overflow-x: auto;
+}
+nav.pestanas button {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 600;
+  color: var(--texto-2);
+  cursor: pointer;
+  white-space: nowrap;
+}
+nav.pestanas button[aria-selected="true"] { color: var(--texto); border-bottom-color: var(--acento); }
+
+section[hidden] { display: none; }
+
+.tarjeta {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: var(--sombra);
+}
+.tarjeta h2 { margin: 0 0 4px; font-size: 1.15rem; }
+.tarjeta .sub { margin: 0 0 14px; color: var(--texto-2); font-size: 0.925rem; }
+
+/* Semáforo semanal */
+.tabla-semaforo { width: 100%; border-collapse: separate; border-spacing: 4px; }
+.tabla-semaforo th { font-weight: 600; font-size: 0.85rem; color: var(--texto-2); text-align: center; padding: 4px; }
+.tabla-semaforo th.act { text-align: left; color: var(--texto); font-size: 0.925rem; }
+.tabla-semaforo td { padding: 0; height: 1px; }
+.desplazable { overflow-x: auto; }
+
+.celda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 4px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  min-width: 84px;
+  height: 100%;
+  min-height: 64px;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  cursor: default;
+  border: 1px solid var(--borde);
+}
+.celda .icono { width: 22px; height: 22px; }
+.celda.verde { color: var(--verde-texto); }
+.celda.amarillo { color: var(--amarillo-texto); }
+.celda.rojo { color: var(--rojo-texto); }
+
+.dia-cab { display: block; }
+.dia-cab small { display: block; font-weight: 400; color: var(--texto-3); }
+.confianza { font-size: 0.7rem; font-weight: 500; padding: 1px 6px; border-radius: 99px; border: 1px solid var(--borde); color: var(--texto-3); }
+
+/* Leyenda */
+.leyenda { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.85rem; color: var(--texto-2); margin-top: 10px; }
+.leyenda span { display: inline-flex; align-items: center; gap: 6px; }
+.leyenda .icono { width: 16px; height: 16px; }
+
+/* Controles */
+.controles { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+.controles label { display: flex; flex-direction: column; font-size: 0.85rem; color: var(--texto-2); gap: 4px; }
+select {
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--borde);
+  background: var(--superficie);
+  color: var(--texto);
+  min-width: 200px;
+}
+
+/* Indicadores */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpi { padding: 12px; border: 1px solid var(--borde); border-radius: 8px; }
+.kpi .valor { font-size: 1.5rem; font-weight: 700; line-height: 1.2; }
+.kpi .valor small { font-size: 0.9rem; font-weight: 500; color: var(--texto-2); }
+.kpi .etiqueta { font-size: 0.8rem; color: var(--texto-2); }
+
+/* Barra apilada del semáforo */
+.barra-apilada { display: flex; height: 36px; border-radius: 6px; overflow: hidden; gap: 2px; background: var(--superficie); }
+.barra-apilada div { display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; color: #0b0b0b; min-width: 0; }
+.barra-apilada .verde { background: var(--verde); }
+.barra-apilada .amarillo { background: var(--amarillo); }
+.barra-apilada .rojo { background: var(--rojo); color: #fff; }
+
+/* Gráficas */
+.grafica { width: 100%; position: relative; }
+.grafica svg { display: block; width: 100%; height: auto; overflow: visible; }
+.grafica text { fill: var(--texto-3); font-size: 11px; font-family: inherit; }
+.grafica .eje { stroke: var(--borde); }
+.grafica .rejilla { stroke: var(--rejilla); }
+.grafica .barra { fill: var(--lluvia); }
+.grafica .barra-suave { fill: var(--lluvia-suave); }
+.grafica .jornada { fill: var(--jornada); }
+.grafica .referencia { stroke: var(--texto-2); stroke-width: 2; stroke-dasharray: 4 3; }
+.grafica .objetivo { fill: transparent; }
+.grafica .objetivo:hover + .barra, .grafica .barra:hover { opacity: 0.8; }
+.grafica .celda-mapa { stroke: var(--superficie); stroke-width: 2; }
+
+.info-emergente {
+  position: fixed;
+  pointer-events: none;
+  background: var(--texto);
+  color: var(--superficie);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  max-width: 260px;
+  z-index: 10;
+  display: none;
+}
+
+.escala { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--texto-2); margin-top: 8px; }
+.escala .paso { width: 22px; height: 12px; border-radius: 2px; }
+
+details { margin-top: 10px; }
+details summary { cursor: pointer; color: var(--acento); font-size: 0.9rem; }
+
+table.datos { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin-top: 8px; }
+table.datos th, table.datos td { padding: 6px 8px; border-bottom: 1px solid var(--borde); text-align: right; }
+table.datos th:first-child, table.datos td:first-child { text-align: left; }
+table.datos.texto-izq th, table.datos.texto-izq td { text-align: left; vertical-align: top; }
+table.datos th { color: var(--texto-2); font-weight: 600; }
+
+.dos-columnas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+
+.texto h3 { margin: 18px 0 6px; font-size: 1rem; }
+.texto p, .texto li { color: var(--texto-2); }
+.texto a { color: var(--acento); }
+
+footer { padding: 24px 0 40px; color: var(--texto-3); font-size: 0.85rem; }
+footer a { color: var(--acento); }
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.3rem; }
+  .celda { min-width: 64px; font-size: 0.75rem; }
+  select { min-width: 0; width: 100%; }
+  .controles label { flex: 1 1 140px; }
+}

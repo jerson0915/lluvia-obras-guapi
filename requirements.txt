@@ -1,0 +1,3 @@
+# Los scripts solo usan la biblioteca estándar de Python 3.11+.
+# No hay que instalar nada por ahora. Si más adelante usas librerías
+# (por ejemplo pandas), escríbelas aquí, una por línea.

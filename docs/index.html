@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lluvia y obras · Guapi</title>
+  <meta name="description" content="Pronóstico e histórico de lluvia para planear actividades de construcción en Guapi, Cauca.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3C16 3 6 15 6 21a10 10 0 0 0 20 0C26 15 16 3 16 3z' fill='%232a78d6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <h1>Lluvia y obras en Guapi</h1>
+      <p>Pronóstico de 7 días e histórico de lluvia para programar actividades de construcción en el casco urbano.</p>
+      <div class="actualizado" id="actualizado">Cargando datos…</div>
+    </header>
+
+    <div class="aviso">
+      Herramienta de apoyo para planear. <strong>No reemplaza el criterio técnico de la obra ni las alertas oficiales.</strong>
+      Ante cualquier riesgo, consulta las <a href="http://www.pronosticosyalertas.gov.co/" target="_blank" rel="noopener">alertas del IDEAM</a>.
+    </div>
+
+    <nav class="pestanas" role="tablist">
+      <button role="tab" aria-selected="true" data-pestana="semana">Esta semana</button>
+      <button role="tab" aria-selected="false" data-pestana="planear">Planear mi obra</button>
+      <button role="tab" aria-selected="false" data-pestana="historico">Histórico</button>
+      <button role="tab" aria-selected="false" data-pestana="leer">Cómo leer esto</button>
+    </nav>
+
+    <!-- ESTA SEMANA -->
+    <section id="semana">
+      <div class="tarjeta">
+        <h2>Semáforo por actividad</h2>
+        <p class="sub">Pasa el cursor (o toca) una casilla para ver por qué tiene ese color. Los primeros 3 días son los más confiables.</p>
+        <div class="desplazable"><table class="tabla-semaforo" id="tabla-semaforo"></table></div>
+        <div class="leyenda" id="leyenda-semaforo"></div>
+      </div>
+
+      <div class="tarjeta">
+        <h2>Lluvia esperada por día</h2>
+        <p class="sub">Milímetros de lluvia pronosticados. La línea punteada es la lluvia diaria normal para el mes según la estación del IDEAM.</p>
+        <div class="grafica" id="grafica-dias"></div>
+      </div>
+
+      <div class="tarjeta">
+        <h2>Lluvia hora por hora</h2>
+        <p class="sub">La franja sombreada es la jornada de trabajo. Úsala para ubicar el mejor momento del día.</p>
+        <div class="grafica" id="grafica-horas"></div>
+      </div>
+    </section>
+
+    <!-- PLANEAR -->
+    <section id="planear" hidden>
+      <div class="tarjeta">
+        <h2>¿Cómo suele estar el clima para mi actividad?</h2>
+        <p class="sub">Calculado con lo que realmente llovió en la estación del IDEAM del aeropuerto, aplicando las mismas reglas del semáforo a cada día registrado.</p>
+        <div class="controles">
+          <label>Actividad <select id="sel-actividad"></select></label>
+          <label>Mes <select id="sel-mes"></select></label>
+        </div>
+        <div id="resumen-planear"></div>
+      </div>
+
+      <div class="tarjeta">
+        <h2>Días aprovechables mes a mes</h2>
+        <p class="sub" id="sub-meses"></p>
+        <div class="grafica" id="grafica-verde-mes"></div>
+      </div>
+
+      <div class="tarjeta">
+        <h2>¿A qué hora suele llover?</h2>
+        <p class="sub">Probabilidad de que llueva (0,5 mm o más) en cada hora, por mes. Más oscuro = más probable.</p>
+        <div class="grafica" id="mapa-horas"></div>
+        <div class="escala" id="escala-mapa"></div>
+      </div>
+    </section>
+
+    <!-- HISTÓRICO -->
+    <section id="historico" hidden>
+      <div class="dos-columnas">
+        <div class="tarjeta">
+          <h2>Lluvia típica por mes</h2>
+          <p class="sub">Promedio en milímetros (mm) por mes.</p>
+          <div class="grafica" id="grafica-mensual"></div>
+          <details>
+            <summary>Ver tabla</summary>
+            <div class="desplazable"><table class="datos" id="tabla-mensual"></table></div>
+          </details>
+        </div>
+        <div class="tarjeta">
+          <h2>Días de lluvia fuerte</h2>
+          <p class="sub">Porcentaje de días del mes con 20 mm o más.</p>
+          <div class="grafica" id="grafica-fuertes"></div>
+        </div>
+      </div>
+
+      <div class="dos-columnas">
+        <div class="tarjeta">
+          <h2>Datos disponibles por año</h2>
+          <p class="sub">Días con registro completo en la estación. Los años con pocos días pesan menos en los promedios.</p>
+          <div class="grafica" id="grafica-anios"></div>
+        </div>
+        <div class="tarjeta">
+          <h2>Los 10 días más lluviosos registrados</h2>
+          <table class="datos" id="tabla-record"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO LEER -->
+    <section id="leer" hidden>
+      <div class="tarjeta texto" id="texto-leer"></div>
+    </section>
+
+    <footer>
+      Datos: <a href="https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Precipitaci-n/s54a-sgyg" target="_blank" rel="noopener">IDEAM vía datos.gov.co</a>
+      y <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0).
+      Código en <a href="https://github.com/jerson0915/lluvia-obras-guapi" target="_blank" rel="noopener">GitHub</a>.
+    </footer>
+  </div>
+
+  <div class="info-emergente" id="info"></div>
+  <script src="app.js?v=1"></script>
+</body>
+</html>

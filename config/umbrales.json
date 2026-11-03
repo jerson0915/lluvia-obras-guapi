@@ -1,0 +1,71 @@
+{
+  "_nota": "Umbrales PROVISIONALES. Deben validarse con ingenieros y maestros de obra de Guapi (fase 2). Cambia los valores aquí y el semáforo se recalcula solo en la siguiente actualización.",
+  "ubicacion": {
+    "nombre": "Guapi (casco urbano)",
+    "latitud": 2.5744,
+    "longitud": -77.8948,
+    "zona_horaria": "America/Bogota"
+  },
+  "estacion_ideam": {
+    "codigo": "0053045040",
+    "nombre": "Aeropuerto Guapi - AUT",
+    "codigo_sensor": "0240",
+    "anio_inicio": 2017
+  },
+  "jornada": {
+    "hora_inicio": 7,
+    "hora_fin": 17,
+    "_nota": "Horas de trabajo consideradas: desde hora_inicio hasta antes de hora_fin."
+  },
+  "hora_seca": {
+    "lluvia_max_mm": 0.2,
+    "probabilidad_max": 50,
+    "_nota": "Una hora es seca si llueve menos de lluvia_max_mm y (en el pronóstico) la probabilidad es menor que probabilidad_max."
+  },
+  "variables": {
+    "lluvia_jornada": { "nombre": "Lluvia en la jornada", "unidad": "mm" },
+    "ventana_seca": { "nombre": "Mayor ventana seca en la jornada", "unidad": "h" },
+    "lluvia_3d": { "nombre": "Lluvia acumulada en 3 días", "unidad": "mm" }
+  },
+  "actividades": [
+    {
+      "id": "concreto",
+      "nombre": "Fundir concreto",
+      "descripcion": "Vaciado de placas, columnas o vigas. El concreto fresco necesita varias horas sin lluvia.",
+      "verde": [
+        { "variable": "lluvia_jornada", "op": "<=", "valor": 2 },
+        { "variable": "ventana_seca", "op": ">=", "valor": 6 }
+      ],
+      "rojo": [
+        { "variable": "lluvia_jornada", "op": ">=", "valor": 10 },
+        { "variable": "ventana_seca", "op": "<", "valor": 3 }
+      ]
+    },
+    {
+      "id": "excavacion",
+      "nombre": "Excavaciones y rellenos",
+      "descripcion": "Movimiento de tierras, zanjas y compactación. Importa también la lluvia de los días anteriores (suelo saturado).",
+      "verde": [
+        { "variable": "lluvia_jornada", "op": "<=", "valor": 5 },
+        { "variable": "lluvia_3d", "op": "<=", "valor": 20 }
+      ],
+      "rojo": [
+        { "variable": "lluvia_jornada", "op": ">=", "valor": 20 },
+        { "variable": "lluvia_3d", "op": ">=", "valor": 50 }
+      ]
+    },
+    {
+      "id": "panete",
+      "nombre": "Pañete y pintura exterior",
+      "descripcion": "Acabados en fachadas expuestas. Requieren la jornada prácticamente seca.",
+      "verde": [
+        { "variable": "lluvia_jornada", "op": "<=", "valor": 1 },
+        { "variable": "ventana_seca", "op": ">=", "valor": 8 }
+      ],
+      "rojo": [
+        { "variable": "lluvia_jornada", "op": ">=", "valor": 5 },
+        { "variable": "ventana_seca", "op": "<", "valor": 4 }
+      ]
+    }
+  ]
+}
