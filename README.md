@@ -58,7 +58,7 @@ lluvia-obras-guapi/
   - Un día cuenta como válido si tiene ≥ 130 de 144 registros.
   - Las horas con registros duplicados se reescalan.
   - Se excluyen las rachas de ≥ 5 días seguidos en 0 mm (sensor dañado). Eso descartó 164 días; por ejemplo, de noviembre de 2019 a marzo de 2020 hubo 75 días seguidos en cero.
-- **No se usa reanálisis (ERA5) para el histórico.** Comparado con la estación en 2019, ERA5 calculó 8.747 mm frente a 3.650 mm medidos, y lluvia en 312 días frente a 196.
+- **No se usa reanálisis (ERA5) para el histórico.** Comparado con los días limpios de la estación en 2019, ERA5 calculó 7.691 mm frente a 3.561 mm medidos (+116 %), y lluvia en 266 días frente a 191.
 - **El pronóstico tiene sesgo de "día lluvioso".** En 2026, el pronóstico archivado (`best_match`) calculó 3.204 mm frente a 2.878 mm medidos (+11 %), pero anunció lluvia en 179 días frente a 136 reales. Por eso el semáforo tiende a ser conservador.
 - **La estación Bonanza** (53045010, con datos desde 1966) no está en el dataset abierto. Pedirla al IDEAM (DHIME) mejoraría mucho el histórico.
 
