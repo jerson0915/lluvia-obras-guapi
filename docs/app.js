@@ -31,6 +31,10 @@ function svg(ancho, alto) {
   const elemento = document.createElementNS(SVG_NS, "svg");
   elemento.setAttribute("viewBox", `0 0 ${ancho} ${alto}`);
   elemento.setAttribute("role", "img");
+  // Degradado de las barras de lluvia: cian arriba, azul abajo.
+  elemento.innerHTML = '<defs><linearGradient id="degradado-lluvia" x1="0" y1="0" x2="0" y2="1">' +
+    '<stop offset="0" style="stop-color:var(--lluvia-alta)"/><stop offset="1" style="stop-color:var(--lluvia-baja)"/>' +
+    "</linearGradient></defs>";
   return elemento;
 }
 
@@ -101,7 +105,9 @@ function graficaBarras(contenedor, items, { unidad = "mm", alto = 220, sufijoEje
     if (item.ref != null) {
       agregar(lienzo, "line", { class: "referencia", x1: x - 3, x2: x + anchoBarra + 3, y1: y(item.ref), y2: y(item.ref) });
     }
-    agregar(lienzo, "text", { x: x + anchoBarra / 2, y: alto - margen.abajo + 16, "text-anchor": "middle" }, item.etiqueta);
+    // Si la etiqueta no cabe (por ejemplo, años en el celular), se usa la versión corta.
+    const etiqueta = item.etiquetaCorta && banda < item.etiqueta.length * 7.5 ? item.etiquetaCorta : item.etiqueta;
+    agregar(lienzo, "text", { x: x + anchoBarra / 2, y: alto - margen.abajo + 16, "text-anchor": "middle" }, etiqueta);
     if (item.etiqueta2) {
       agregar(lienzo, "text", { x: x + anchoBarra / 2, y: alto - margen.abajo + 29, "text-anchor": "middle" }, item.etiqueta2);
     }
@@ -321,7 +327,7 @@ function pintarHistorico() {
     info: `<strong>${MESES_LARGOS[m.mes - 1]}</strong><br>${m.pct_dias_fuertes} % de días ≥ 20 mm<br>${m.pct_dias_muy_fuertes} % de días ≥ 50 mm`,
   })), { unidad: "%", sufijoEje: " %" });
   graficaBarras($("#grafica-anios"), DATOS.anios.map((a) => ({
-    etiqueta: String(a.anio), valor: a.dias_validos,
+    etiqueta: String(a.anio), etiquetaCorta: `'${String(a.anio).slice(2)}`, valor: a.dias_validos,
     info: `<strong>${a.anio}</strong><br>${a.dias_validos} días completos<br>Lluvia media: ${num(a.lluvia_media_dia)} mm/día`,
   })), { unidad: "días" });
 
