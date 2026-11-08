@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T06:10-05:00",
+ "actualizado": "2026-11-08T06:16-05:00",
  "ubicacion": {
   "nombre": "Guapi (casco urbano)",
   "latitud": 2.5744,
@@ -11,10 +11,10 @@
   "nombre": "Aeropuerto Guapi - AUT",
   "codigo_sensor": "0240",
   "anio_inicio": 2017,
-  "dias_validos": 1248,
+  "dias_validos": 1249,
   "dias_excluidos_sensor": 164,
   "primer_dia": "2017-01-01",
-  "ultimo_dia": "2026-11-05"
+  "ultimo_dia": "2026-11-06"
  },
  "jornada": {
   "hora_inicio": 7,
@@ -131,285 +131,131 @@
  ],
  "pronostico": [
   {
-   "fecha": "2026-11-07",
-   "dias_adelante": 0,
-   "lluvia_dia": 10.0,
-   "lluvia_jornada": 3.3,
-   "lluvia_3d": 25.4,
-   "prob_max": 86,
-   "ventana_seca": 0,
-   "ventana_inicio": null,
-   "ventana_fin": null,
-   "lluvia_normal_dia": 11.3,
-   "horas": [
-    {
-     "h": 0,
-     "mm": 0.2,
-     "prob": 60
-    },
-    {
-     "h": 1,
-     "mm": 0.2,
-     "prob": 65
-    },
-    {
-     "h": 2,
-     "mm": 0.3,
-     "prob": 68
-    },
-    {
-     "h": 3,
-     "mm": 0.5,
-     "prob": 70
-    },
-    {
-     "h": 4,
-     "mm": 0.3,
-     "prob": 71
-    },
-    {
-     "h": 5,
-     "mm": 1.0,
-     "prob": 73
-    },
-    {
-     "h": 6,
-     "mm": 0.9,
-     "prob": 74
-    },
-    {
-     "h": 7,
-     "mm": 0.5,
-     "prob": 73
-    },
-    {
-     "h": 8,
-     "mm": 0.2,
-     "prob": 68
-    },
-    {
-     "h": 9,
-     "mm": 0.0,
-     "prob": 62
-    },
-    {
-     "h": 10,
-     "mm": 0.3,
-     "prob": 59
-    },
-    {
-     "h": 11,
-     "mm": 0.2,
-     "prob": 63
-    },
-    {
-     "h": 12,
-     "mm": 0.1,
-     "prob": 70
-    },
-    {
-     "h": 13,
-     "mm": 0.2,
-     "prob": 76
-    },
-    {
-     "h": 14,
-     "mm": 0.2,
-     "prob": 81
-    },
-    {
-     "h": 15,
-     "mm": 0.6,
-     "prob": 84
-    },
-    {
-     "h": 16,
-     "mm": 1.0,
-     "prob": 86
-    },
-    {
-     "h": 17,
-     "mm": 1.1,
-     "prob": 86
-    },
-    {
-     "h": 18,
-     "mm": 0.6,
-     "prob": 83
-    },
-    {
-     "h": 19,
-     "mm": 0.1,
-     "prob": 76
-    },
-    {
-     "h": 20,
-     "mm": 0.0,
-     "prob": 61
-    },
-    {
-     "h": 21,
-     "mm": 0.0,
-     "prob": 42
-    },
-    {
-     "h": 22,
-     "mm": 0.6,
-     "prob": 29
-    },
-    {
-     "h": 23,
-     "mm": 0.9,
-     "prob": 30
-    }
-   ],
-   "semaforo": {
-    "concreto": {
-     "color": "rojo",
-     "motivos": [
-      "Mayor ventana seca en la jornada < 3 h"
-     ]
-    },
-    "excavacion": {
-     "color": "amarillo",
-     "motivos": [
-      "No cumple: Lluvia acumulada en 3 días <= 20 mm"
-     ]
-    },
-    "panete": {
-     "color": "rojo",
-     "motivos": [
-      "Mayor ventana seca en la jornada < 4 h"
-     ]
-    }
-   }
-  },
-  {
    "fecha": "2026-11-08",
-   "dias_adelante": 1,
-   "lluvia_dia": 0.2,
+   "dias_adelante": 0,
+   "lluvia_dia": 0.0,
    "lluvia_jornada": 0.0,
-   "lluvia_3d": 11.3,
-   "prob_max": 41,
+   "lluvia_3d": 11.7,
+   "prob_max": 22,
    "ventana_seca": 10,
    "ventana_inicio": 7,
    "ventana_fin": 17,
-   "lluvia_normal_dia": 11.3,
+   "lluvia_normal_dia": 11.1,
    "horas": [
     {
      "h": 0,
-     "mm": 0.2,
-     "prob": 37
+     "mm": 0.0,
+     "prob": 22
     },
     {
      "h": 1,
      "mm": 0.0,
-     "prob": 41
+     "prob": 16
     },
     {
      "h": 2,
      "mm": 0.0,
-     "prob": 36
+     "prob": 11
     },
     {
      "h": 3,
      "mm": 0.0,
-     "prob": 26
+     "prob": 7
     },
     {
      "h": 4,
-     "mm": 0.0,
-     "prob": 18
-    },
-    {
-     "h": 5,
-     "mm": 0.0,
-     "prob": 12
-    },
-    {
-     "h": 6,
-     "mm": 0.0,
-     "prob": 6
-    },
-    {
-     "h": 7,
-     "mm": 0.0,
-     "prob": 2
-    },
-    {
-     "h": 8,
-     "mm": 0.0,
-     "prob": 1
-    },
-    {
-     "h": 9,
-     "mm": 0.0,
-     "prob": 2
-    },
-    {
-     "h": 10,
-     "mm": 0.0,
-     "prob": 2
-    },
-    {
-     "h": 11,
-     "mm": 0.0,
-     "prob": 1
-    },
-    {
-     "h": 12,
-     "mm": 0.0,
-     "prob": 1
-    },
-    {
-     "h": 13,
-     "mm": 0.0,
-     "prob": 0
-    },
-    {
-     "h": 14,
-     "mm": 0.0,
-     "prob": 0
-    },
-    {
-     "h": 15,
-     "mm": 0.0,
-     "prob": 0
-    },
-    {
-     "h": 16,
-     "mm": 0.0,
-     "prob": 0
-    },
-    {
-     "h": 17,
-     "mm": 0.0,
-     "prob": 0
-    },
-    {
-     "h": 18,
-     "mm": 0.0,
-     "prob": 0
-    },
-    {
-     "h": 19,
-     "mm": 0.0,
-     "prob": 0
-    },
-    {
-     "h": 20,
-     "mm": 0.0,
-     "prob": 2
-    },
-    {
-     "h": 21,
      "mm": 0.0,
      "prob": 4
     },
     {
+     "h": 5,
+     "mm": 0.0,
+     "prob": 2
+    },
+    {
+     "h": 6,
+     "mm": 0.0,
+     "prob": 1
+    },
+    {
+     "h": 7,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 8,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 9,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 10,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 11,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 12,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 13,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 14,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 15,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 16,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 17,
+     "mm": 0.0,
+     "prob": 0
+    },
+    {
+     "h": 18,
+     "mm": 0.0,
+     "prob": 1
+    },
+    {
+     "h": 19,
+     "mm": 0.0,
+     "prob": 2
+    },
+    {
+     "h": 20,
+     "mm": 0.0,
+     "prob": 4
+    },
+    {
+     "h": 21,
+     "mm": 0.0,
+     "prob": 7
+    },
+    {
      "h": 22,
      "mm": 0.0,
-     "prob": 6
+     "prob": 8
     },
     {
      "h": 23,
@@ -434,218 +280,70 @@
   },
   {
    "fecha": "2026-11-09",
-   "dias_adelante": 2,
-   "lluvia_dia": 7.5,
-   "lluvia_jornada": 0.5,
-   "lluvia_3d": 17.7,
-   "prob_max": 67,
-   "ventana_seca": 8,
-   "ventana_inicio": 9,
-   "ventana_fin": 17,
-   "lluvia_normal_dia": 11.3,
+   "dias_adelante": 1,
+   "lluvia_dia": 12.2,
+   "lluvia_jornada": 1.9,
+   "lluvia_3d": 22.8,
+   "prob_max": 88,
+   "ventana_seca": 1,
+   "ventana_inicio": 11,
+   "ventana_fin": 12,
+   "lluvia_normal_dia": 11.1,
    "horas": [
     {
      "h": 0,
      "mm": 0.0,
-     "prob": 5
+     "prob": 2
     },
     {
      "h": 1,
      "mm": 0.0,
-     "prob": 6
+     "prob": 0
     },
     {
      "h": 2,
+     "mm": 0.0,
+     "prob": 4
+    },
+    {
+     "h": 3,
+     "mm": 0.0,
+     "prob": 10
+    },
+    {
+     "h": 4,
      "mm": 0.1,
+     "prob": 14
+    },
+    {
+     "h": 5,
+     "mm": 0.2,
+     "prob": 15
+    },
+    {
+     "h": 6,
+     "mm": 0.2,
+     "prob": 15
+    },
+    {
+     "h": 7,
+     "mm": 0.3,
+     "prob": 14
+    },
+    {
+     "h": 8,
+     "mm": 0.2,
+     "prob": 11
+    },
+    {
+     "h": 9,
+     "mm": 0.2,
+     "prob": 7
+    },
+    {
+     "h": 10,
+     "mm": 0.3,
      "prob": 12
-    },
-    {
-     "h": 3,
-     "mm": 0.1,
-     "prob": 19
-    },
-    {
-     "h": 4,
-     "mm": 0.3,
-     "prob": 25
-    },
-    {
-     "h": 5,
-     "mm": 0.4,
-     "prob": 26
-    },
-    {
-     "h": 6,
-     "mm": 0.4,
-     "prob": 25
-    },
-    {
-     "h": 7,
-     "mm": 0.3,
-     "prob": 24
-    },
-    {
-     "h": 8,
-     "mm": 0.2,
-     "prob": 21
-    },
-    {
-     "h": 9,
-     "mm": 0.0,
-     "prob": 18
-    },
-    {
-     "h": 10,
-     "mm": 0.0,
-     "prob": 18
-    },
-    {
-     "h": 11,
-     "mm": 0.0,
-     "prob": 24
-    },
-    {
-     "h": 12,
-     "mm": 0.0,
-     "prob": 33
-    },
-    {
-     "h": 13,
-     "mm": 0.0,
-     "prob": 39
-    },
-    {
-     "h": 14,
-     "mm": 0.0,
-     "prob": 40
-    },
-    {
-     "h": 15,
-     "mm": 0.0,
-     "prob": 39
-    },
-    {
-     "h": 16,
-     "mm": 0.0,
-     "prob": 37
-    },
-    {
-     "h": 17,
-     "mm": 0.0,
-     "prob": 35
-    },
-    {
-     "h": 18,
-     "mm": 0.0,
-     "prob": 33
-    },
-    {
-     "h": 19,
-     "mm": 0.1,
-     "prob": 35
-    },
-    {
-     "h": 20,
-     "mm": 1.2,
-     "prob": 46
-    },
-    {
-     "h": 21,
-     "mm": 1.5,
-     "prob": 60
-    },
-    {
-     "h": 22,
-     "mm": 1.9,
-     "prob": 67
-    },
-    {
-     "h": 23,
-     "mm": 1.0,
-     "prob": 60
-    }
-   ],
-   "semaforo": {
-    "concreto": {
-     "color": "verde",
-     "motivos": []
-    },
-    "excavacion": {
-     "color": "verde",
-     "motivos": []
-    },
-    "panete": {
-     "color": "verde",
-     "motivos": []
-    }
-   }
-  },
-  {
-   "fecha": "2026-11-10",
-   "dias_adelante": 3,
-   "lluvia_dia": 8.8,
-   "lluvia_jornada": 2.9,
-   "lluvia_3d": 16.5,
-   "prob_max": 100,
-   "ventana_seca": 3,
-   "ventana_inicio": 7,
-   "ventana_fin": 10,
-   "lluvia_normal_dia": 11.3,
-   "horas": [
-    {
-     "h": 0,
-     "mm": 0.0,
-     "prob": 45
-    },
-    {
-     "h": 1,
-     "mm": 0.0,
-     "prob": 33
-    },
-    {
-     "h": 2,
-     "mm": 0.0,
-     "prob": 26
-    },
-    {
-     "h": 3,
-     "mm": 0.0,
-     "prob": 21
-    },
-    {
-     "h": 4,
-     "mm": 0.0,
-     "prob": 18
-    },
-    {
-     "h": 5,
-     "mm": 0.0,
-     "prob": 19
-    },
-    {
-     "h": 6,
-     "mm": 0.0,
-     "prob": 22
-    },
-    {
-     "h": 7,
-     "mm": 0.0,
-     "prob": 24
-    },
-    {
-     "h": 8,
-     "mm": 0.0,
-     "prob": 21
-    },
-    {
-     "h": 9,
-     "mm": 0.0,
-     "prob": 17
-    },
-    {
-     "h": 10,
-     "mm": 0.2,
-     "prob": 20
     },
     {
      "h": 11,
@@ -654,76 +352,77 @@
     },
     {
      "h": 12,
-     "mm": 0.0,
-     "prob": 59
+     "mm": 0.2,
+     "prob": 68
     },
     {
      "h": 13,
-     "mm": 0.2,
-     "prob": 78
+     "mm": 0.3,
+     "prob": 88
     },
     {
      "h": 14,
-     "mm": 0.8,
-     "prob": 89
+     "mm": 0.1,
+     "prob": 83
     },
     {
      "h": 15,
-     "mm": 0.8,
-     "prob": 96
+     "mm": 0.1,
+     "prob": 65
     },
     {
      "h": 16,
-     "mm": 0.8,
-     "prob": 100
+     "mm": 0.1,
+     "prob": 53
     },
     {
      "h": 17,
-     "mm": 1.2,
-     "prob": 100
+     "mm": 0.4,
+     "prob": 53
     },
     {
      "h": 18,
-     "mm": 1.2,
-     "prob": 98
+     "mm": 1.7,
+     "prob": 59
     },
     {
      "h": 19,
-     "mm": 1.2,
-     "prob": 94
+     "mm": 2.6,
+     "prob": 65
     },
     {
      "h": 20,
-     "mm": 0.5,
-     "prob": 89
+     "mm": 2.3,
+     "prob": 73
     },
     {
      "h": 21,
-     "mm": 0.5,
+     "mm": 2.1,
      "prob": 83
     },
     {
      "h": 22,
      "mm": 0.5,
-     "prob": 76
+     "prob": 86
     },
     {
      "h": 23,
-     "mm": 0.8,
-     "prob": 67
+     "mm": 0.2,
+     "prob": 79
     }
    ],
    "semaforo": {
     "concreto": {
-     "color": "amarillo",
+     "color": "rojo",
      "motivos": [
-      "No cumple: Lluvia en la jornada <= 2 mm",
-      "No cumple: Mayor ventana seca en la jornada >= 6 h"
+      "Mayor ventana seca en la jornada < 3 h"
      ]
     },
     "excavacion": {
-     "color": "verde",
-     "motivos": []
+     "color": "amarillo",
+     "motivos": [
+      "No cumple: Lluvia acumulada en 3 días <= 20 mm"
+     ]
     },
     "panete": {
      "color": "rojo",
@@ -734,136 +433,136 @@
    }
   },
   {
-   "fecha": "2026-11-11",
-   "dias_adelante": 4,
-   "lluvia_dia": 29.2,
-   "lluvia_jornada": 6.0,
-   "lluvia_3d": 45.5,
-   "prob_max": 100,
-   "ventana_seca": 5,
+   "fecha": "2026-11-10",
+   "dias_adelante": 2,
+   "lluvia_dia": 14.5,
+   "lluvia_jornada": 4.3,
+   "lluvia_3d": 26.7,
+   "prob_max": 99,
+   "ventana_seca": 4,
    "ventana_inicio": 8,
-   "ventana_fin": 13,
-   "lluvia_normal_dia": 11.3,
+   "ventana_fin": 12,
+   "lluvia_normal_dia": 11.1,
    "horas": [
     {
      "h": 0,
-     "mm": 0.8,
-     "prob": 57
+     "mm": 0.0,
+     "prob": 66
     },
     {
      "h": 1,
-     "mm": 0.8,
-     "prob": 47
+     "mm": 0.0,
+     "prob": 53
     },
     {
      "h": 2,
-     "mm": 1.0,
-     "prob": 38
+     "mm": 0.0,
+     "prob": 40
     },
     {
      "h": 3,
-     "mm": 1.0,
-     "prob": 30
+     "mm": 0.0,
+     "prob": 28
     },
     {
      "h": 4,
-     "mm": 1.0,
-     "prob": 25
+     "mm": 0.2,
+     "prob": 20
     },
     {
      "h": 5,
-     "mm": 0.6,
-     "prob": 24
+     "mm": 0.2,
+     "prob": 22
     },
     {
      "h": 6,
-     "mm": 0.6,
-     "prob": 25
+     "mm": 1.7,
+     "prob": 28
     },
     {
      "h": 7,
-     "mm": 0.6,
-     "prob": 25
+     "mm": 0.4,
+     "prob": 33
     },
     {
      "h": 8,
      "mm": 0.1,
-     "prob": 21
+     "prob": 31
     },
     {
      "h": 9,
      "mm": 0.1,
-     "prob": 16
+     "prob": 27
     },
     {
      "h": 10,
-     "mm": 0.1,
-     "prob": 16
+     "mm": 0.0,
+     "prob": 29
     },
     {
      "h": 11,
-     "mm": 0.1,
-     "prob": 26
+     "mm": 0.0,
+     "prob": 41
     },
     {
      "h": 12,
      "mm": 0.1,
-     "prob": 42
+     "prob": 58
     },
     {
      "h": 13,
-     "mm": 0.1,
-     "prob": 57
+     "mm": 0.2,
+     "prob": 73
     },
     {
      "h": 14,
-     "mm": 1.6,
-     "prob": 72
+     "mm": 0.6,
+     "prob": 84
     },
     {
      "h": 15,
-     "mm": 1.6,
-     "prob": 86
+     "mm": 0.6,
+     "prob": 93
     },
     {
      "h": 16,
-     "mm": 1.6,
-     "prob": 96
+     "mm": 2.2,
+     "prob": 98
     },
     {
      "h": 17,
-     "mm": 4.0,
-     "prob": 100
-    },
-    {
-     "h": 18,
-     "mm": 4.0,
+     "mm": 2.2,
      "prob": 99
     },
     {
-     "h": 19,
-     "mm": 4.0,
-     "prob": 98
-    },
-    {
-     "h": 20,
-     "mm": 1.4,
-     "prob": 98
-    },
-    {
-     "h": 21,
-     "mm": 1.4,
+     "h": 18,
+     "mm": 2.3,
      "prob": 97
     },
     {
-     "h": 22,
-     "mm": 1.4,
+     "h": 19,
+     "mm": 1.2,
      "prob": 94
     },
     {
+     "h": 20,
+     "mm": 1.3,
+     "prob": 91
+    },
+    {
+     "h": 21,
+     "mm": 1.0,
+     "prob": 87
+    },
+    {
+     "h": 22,
+     "mm": 0.1,
+     "prob": 82
+    },
+    {
      "h": 23,
-     "mm": 1.2,
-     "prob": 86
+     "mm": 0.0,
+     "prob": 75
     }
    ],
    "semaforo": {
@@ -877,54 +576,54 @@
     "excavacion": {
      "color": "amarillo",
      "motivos": [
-      "No cumple: Lluvia en la jornada <= 5 mm",
       "No cumple: Lluvia acumulada en 3 días <= 20 mm"
      ]
     },
     "panete": {
-     "color": "rojo",
+     "color": "amarillo",
      "motivos": [
-      "Lluvia en la jornada >= 5 mm"
+      "No cumple: Lluvia en la jornada <= 1 mm",
+      "No cumple: Mayor ventana seca en la jornada >= 8 h"
      ]
     }
    }
   },
   {
-   "fecha": "2026-11-12",
-   "dias_adelante": 5,
-   "lluvia_dia": 28.0,
-   "lluvia_jornada": 7.8,
-   "lluvia_3d": 66.0,
+   "fecha": "2026-11-11",
+   "dias_adelante": 3,
+   "lluvia_dia": 24.4,
+   "lluvia_jornada": 8.1,
+   "lluvia_3d": 51.1,
    "prob_max": 100,
    "ventana_seca": 1,
    "ventana_inicio": 7,
    "ventana_fin": 8,
-   "lluvia_normal_dia": 11.3,
+   "lluvia_normal_dia": 11.1,
    "horas": [
     {
      "h": 0,
-     "mm": 1.2,
-     "prob": 76
+     "mm": 0.0,
+     "prob": 67
     },
     {
      "h": 1,
-     "mm": 1.2,
-     "prob": 65
+     "mm": 0.0,
+     "prob": 59
     },
     {
      "h": 2,
-     "mm": 0.2,
-     "prob": 53
+     "mm": 0.1,
+     "prob": 50
     },
     {
      "h": 3,
-     "mm": 0.2,
-     "prob": 40
+     "mm": 0.1,
+     "prob": 41
     },
     {
      "h": 4,
-     "mm": 0.2,
-     "prob": 31
+     "mm": 0.0,
+     "prob": 33
     },
     {
      "h": 5,
@@ -934,92 +633,92 @@
     {
      "h": 6,
      "mm": 0.0,
-     "prob": 27
+     "prob": 22
     },
     {
      "h": 7,
      "mm": 0.0,
-     "prob": 27
+     "prob": 20
     },
     {
      "h": 8,
-     "mm": 0.2,
-     "prob": 24
+     "mm": 0.4,
+     "prob": 20
     },
     {
      "h": 9,
      "mm": 0.2,
-     "prob": 21
+     "prob": 23
     },
     {
      "h": 10,
      "mm": 0.2,
-     "prob": 25
+     "prob": 31
     },
     {
      "h": 11,
-     "mm": 0.4,
-     "prob": 40
+     "mm": 0.2,
+     "prob": 48
     },
     {
      "h": 12,
-     "mm": 0.4,
-     "prob": 62
+     "mm": 0.1,
+     "prob": 71
     },
     {
      "h": 13,
-     "mm": 0.4,
-     "prob": 80
+     "mm": 0.7,
+     "prob": 88
     },
     {
      "h": 14,
-     "mm": 2.0,
-     "prob": 90
+     "mm": 2.1,
+     "prob": 95
     },
     {
      "h": 15,
-     "mm": 2.0,
-     "prob": 96
+     "mm": 2.1,
+     "prob": 97
     },
     {
      "h": 16,
-     "mm": 2.0,
-     "prob": 100
+     "mm": 2.1,
+     "prob": 98
     },
     {
      "h": 17,
-     "mm": 1.6,
+     "mm": 1.9,
      "prob": 100
     },
     {
      "h": 18,
-     "mm": 1.6,
+     "mm": 1.9,
      "prob": 100
     },
     {
      "h": 19,
-     "mm": 1.6,
+     "mm": 1.9,
      "prob": 100
     },
     {
      "h": 20,
-     "mm": 3.1,
-     "prob": 100
+     "mm": 2.6,
+     "prob": 98
     },
     {
      "h": 21,
-     "mm": 3.1,
-     "prob": 100
+     "mm": 2.6,
+     "prob": 94
     },
     {
      "h": 22,
-     "mm": 3.1,
-     "prob": 99
+     "mm": 2.6,
+     "prob": 88
     },
     {
      "h": 23,
-     "mm": 3.1,
-     "prob": 97
+     "mm": 2.6,
+     "prob": 80
     }
    ],
    "semaforo": {
@@ -1045,136 +744,446 @@
    }
   },
   {
-   "fecha": "2026-11-13",
-   "dias_adelante": 6,
-   "lluvia_dia": 31.0,
-   "lluvia_jornada": 7.7,
-   "lluvia_3d": 88.2,
+   "fecha": "2026-11-12",
+   "dias_adelante": 4,
+   "lluvia_dia": 23.1,
+   "lluvia_jornada": 5.4,
+   "lluvia_3d": 62.0,
    "prob_max": 99,
-   "ventana_seca": 2,
-   "ventana_inicio": 8,
-   "ventana_fin": 10,
-   "lluvia_normal_dia": 11.3,
+   "ventana_seca": 4,
+   "ventana_inicio": 7,
+   "ventana_fin": 11,
+   "lluvia_normal_dia": 11.1,
    "horas": [
     {
      "h": 0,
-     "mm": 3.1,
-     "prob": 94
+     "mm": 2.6,
+     "prob": 71
     },
     {
      "h": 1,
-     "mm": 3.1,
-     "prob": 90
+     "mm": 2.6,
+     "prob": 61
     },
     {
      "h": 2,
-     "mm": 0.2,
-     "prob": 83
-    },
-    {
-     "h": 3,
-     "mm": 0.2,
-     "prob": 75
-    },
-    {
-     "h": 4,
-     "mm": 0.2,
-     "prob": 67
-    },
-    {
-     "h": 5,
-     "mm": 0.2,
-     "prob": 59
-    },
-    {
-     "h": 6,
-     "mm": 0.2,
-     "prob": 52
-    },
-    {
-     "h": 7,
-     "mm": 0.2,
-     "prob": 47
-    },
-    {
-     "h": 8,
-     "mm": 0.1,
-     "prob": 46
-    },
-    {
-     "h": 9,
      "mm": 0.1,
      "prob": 49
     },
     {
+     "h": 3,
+     "mm": 0.1,
+     "prob": 36
+    },
+    {
+     "h": 4,
+     "mm": 0.1,
+     "prob": 27
+    },
+    {
+     "h": 5,
+     "mm": 0.0,
+     "prob": 23
+    },
+    {
+     "h": 6,
+     "mm": 0.0,
+     "prob": 23
+    },
+    {
+     "h": 7,
+     "mm": 0.0,
+     "prob": 24
+    },
+    {
+     "h": 8,
+     "mm": 0.1,
+     "prob": 23
+    },
+    {
+     "h": 9,
+     "mm": 0.1,
+     "prob": 24
+    },
+    {
      "h": 10,
      "mm": 0.1,
-     "prob": 52
+     "prob": 29
     },
     {
      "h": 11,
-     "mm": 0.1,
-     "prob": 56
+     "mm": 0.2,
+     "prob": 43
     },
     {
      "h": 12,
-     "mm": 0.1,
-     "prob": 61
+     "mm": 0.2,
+     "prob": 62
     },
     {
      "h": 13,
-     "mm": 0.1,
-     "prob": 67
-    },
-    {
-     "h": 14,
-     "mm": 2.3,
-     "prob": 73
-    },
-    {
-     "h": 15,
-     "mm": 2.3,
+     "mm": 0.2,
      "prob": 78
     },
     {
+     "h": 14,
+     "mm": 1.5,
+     "prob": 87
+    },
+    {
+     "h": 15,
+     "mm": 1.5,
+     "prob": 92
+    },
+    {
      "h": 16,
-     "mm": 2.3,
-     "prob": 84
+     "mm": 1.5,
+     "prob": 96
     },
     {
      "h": 17,
-     "mm": 2.3,
-     "prob": 89
+     "mm": 1.5,
+     "prob": 98
     },
     {
      "h": 18,
-     "mm": 2.3,
-     "prob": 94
+     "mm": 1.5,
+     "prob": 99
     },
     {
      "h": 19,
-     "mm": 2.3,
+     "mm": 1.5,
      "prob": 98
     },
     {
      "h": 20,
-     "mm": 2.3,
-     "prob": 99
+     "mm": 2.1,
+     "prob": 96
     },
     {
      "h": 21,
-     "mm": 2.3,
-     "prob": 99
+     "mm": 2.1,
+     "prob": 94
     },
     {
      "h": 22,
-     "mm": 2.3,
-     "prob": 98
+     "mm": 2.1,
+     "prob": 90
     },
     {
      "h": 23,
-     "mm": 2.3,
+     "mm": 1.4,
+     "prob": 86
+    }
+   ],
+   "semaforo": {
+    "concreto": {
+     "color": "amarillo",
+     "motivos": [
+      "No cumple: Lluvia en la jornada <= 2 mm",
+      "No cumple: Mayor ventana seca en la jornada >= 6 h"
+     ]
+    },
+    "excavacion": {
+     "color": "rojo",
+     "motivos": [
+      "Lluvia acumulada en 3 días >= 50 mm"
+     ]
+    },
+    "panete": {
+     "color": "rojo",
+     "motivos": [
+      "Lluvia en la jornada >= 5 mm"
+     ]
+    }
+   }
+  },
+  {
+   "fecha": "2026-11-13",
+   "dias_adelante": 5,
+   "lluvia_dia": 18.2,
+   "lluvia_jornada": 10.0,
+   "lluvia_3d": 65.7,
+   "prob_max": 97,
+   "ventana_seca": 3,
+   "ventana_inicio": 8,
+   "ventana_fin": 11,
+   "lluvia_normal_dia": 11.1,
+   "horas": [
+    {
+     "h": 0,
+     "mm": 1.4,
+     "prob": 81
+    },
+    {
+     "h": 1,
+     "mm": 1.4,
+     "prob": 75
+    },
+    {
+     "h": 2,
+     "mm": 0.4,
+     "prob": 66
+    },
+    {
+     "h": 3,
+     "mm": 0.4,
+     "prob": 55
+    },
+    {
+     "h": 4,
+     "mm": 0.4,
+     "prob": 45
+    },
+    {
+     "h": 5,
+     "mm": 0.4,
+     "prob": 39
+    },
+    {
+     "h": 6,
+     "mm": 0.4,
+     "prob": 34
+    },
+    {
+     "h": 7,
+     "mm": 0.4,
+     "prob": 29
+    },
+    {
+     "h": 8,
+     "mm": 0.0,
+     "prob": 21
+    },
+    {
+     "h": 9,
+     "mm": 0.0,
+     "prob": 13
+    },
+    {
+     "h": 10,
+     "mm": 0.0,
+     "prob": 14
+    },
+    {
+     "h": 11,
+     "mm": 0.4,
+     "prob": 33
+    },
+    {
+     "h": 12,
+     "mm": 0.4,
+     "prob": 60
+    },
+    {
+     "h": 13,
+     "mm": 0.4,
+     "prob": 82
+    },
+    {
+     "h": 14,
+     "mm": 2.8,
+     "prob": 91
+    },
+    {
+     "h": 15,
+     "mm": 2.8,
+     "prob": 95
+    },
+    {
+     "h": 16,
+     "mm": 2.8,
+     "prob": 96
+    },
+    {
+     "h": 17,
+     "mm": 0.2,
      "prob": 97
+    },
+    {
+     "h": 18,
+     "mm": 0.2,
+     "prob": 95
+    },
+    {
+     "h": 19,
+     "mm": 0.2,
+     "prob": 94
+    },
+    {
+     "h": 20,
+     "mm": 0.7,
+     "prob": 93
+    },
+    {
+     "h": 21,
+     "mm": 0.7,
+     "prob": 93
+    },
+    {
+     "h": 22,
+     "mm": 0.7,
+     "prob": 92
+    },
+    {
+     "h": 23,
+     "mm": 0.7,
+     "prob": 91
+    }
+   ],
+   "semaforo": {
+    "concreto": {
+     "color": "rojo",
+     "motivos": [
+      "Lluvia en la jornada >= 10 mm"
+     ]
+    },
+    "excavacion": {
+     "color": "rojo",
+     "motivos": [
+      "Lluvia acumulada en 3 días >= 50 mm"
+     ]
+    },
+    "panete": {
+     "color": "rojo",
+     "motivos": [
+      "Lluvia en la jornada >= 5 mm",
+      "Mayor ventana seca en la jornada < 4 h"
+     ]
+    }
+   }
+  },
+  {
+   "fecha": "2026-11-14",
+   "dias_adelante": 6,
+   "lluvia_dia": 23.4,
+   "lluvia_jornada": 8.9,
+   "lluvia_3d": 64.7,
+   "prob_max": 94,
+   "ventana_seca": 0,
+   "ventana_inicio": null,
+   "ventana_fin": null,
+   "lluvia_normal_dia": 11.1,
+   "horas": [
+    {
+     "h": 0,
+     "mm": 0.7,
+     "prob": 89
+    },
+    {
+     "h": 1,
+     "mm": 0.7,
+     "prob": 86
+    },
+    {
+     "h": 2,
+     "mm": 0.5,
+     "prob": 82
+    },
+    {
+     "h": 3,
+     "mm": 0.5,
+     "prob": 76
+    },
+    {
+     "h": 4,
+     "mm": 0.5,
+     "prob": 71
+    },
+    {
+     "h": 5,
+     "mm": 0.5,
+     "prob": 66
+    },
+    {
+     "h": 6,
+     "mm": 0.5,
+     "prob": 62
+    },
+    {
+     "h": 7,
+     "mm": 0.5,
+     "prob": 59
+    },
+    {
+     "h": 8,
+     "mm": 0.1,
+     "prob": 58
+    },
+    {
+     "h": 9,
+     "mm": 0.1,
+     "prob": 59
+    },
+    {
+     "h": 10,
+     "mm": 0.1,
+     "prob": 61
+    },
+    {
+     "h": 11,
+     "mm": 0.1,
+     "prob": 63
+    },
+    {
+     "h": 12,
+     "mm": 0.1,
+     "prob": 66
+    },
+    {
+     "h": 13,
+     "mm": 0.1,
+     "prob": 69
+    },
+    {
+     "h": 14,
+     "mm": 2.6,
+     "prob": 73
+    },
+    {
+     "h": 15,
+     "mm": 2.6,
+     "prob": 78
+    },
+    {
+     "h": 16,
+     "mm": 2.6,
+     "prob": 83
+    },
+    {
+     "h": 17,
+     "mm": 2.6,
+     "prob": 88
+    },
+    {
+     "h": 18,
+     "mm": 2.6,
+     "prob": 92
+    },
+    {
+     "h": 19,
+     "mm": 2.6,
+     "prob": 94
+    },
+    {
+     "h": 20,
+     "mm": 0.7,
+     "prob": 93
+    },
+    {
+     "h": 21,
+     "mm": 0.7,
+     "prob": 90
+    },
+    {
+     "h": 22,
+     "mm": 0.7,
+     "prob": 86
+    },
+    {
+     "h": 23,
+     "mm": 0.7,
+     "prob": 82
     }
    ],
    "semaforo": {
@@ -1852,7 +1861,7 @@
   {
    "mes": 11,
    "nombre": "Nov",
-   "dias_validos": 82,
+   "dias_validos": 83,
    "anios": [
     "2017",
     "2018",
@@ -1861,24 +1870,24 @@
     "2026"
    ],
    "confiabilidad": "baja",
-   "lluvia_media_dia": 11.3,
-   "lluvia_tipica_mes": 338,
-   "pct_dias_lluvia": 78,
+   "lluvia_media_dia": 11.1,
+   "lluvia_tipica_mes": 334,
+   "pct_dias_lluvia": 77,
    "pct_dias_fuertes": 16,
    "pct_dias_muy_fuertes": 4,
-   "ventana_seca_mediana": 9.0,
+   "ventana_seca_mediana": 9,
    "prob_lluvia_hora": [
     16,
+    19,
     20,
-    21,
     27,
-    20,
+    19,
     13,
     18,
-    20,
+    19,
     13,
     11,
-    9,
+    8,
     6,
     11,
     11,
@@ -1888,9 +1897,9 @@
     17,
     13,
     16,
-    15,
+    14,
     23,
-    20,
+    19,
     22
    ],
    "semaforo": {
@@ -1898,19 +1907,19 @@
      "verde": 65,
      "amarillo": 24,
      "rojo": 11,
-     "dias": 82
+     "dias": 83
     },
     "excavacion": {
      "verde": 42,
-     "amarillo": 35,
-     "rojo": 23,
-     "dias": 78
+     "amarillo": 34,
+     "rojo": 24,
+     "dias": 79
     },
     "panete": {
      "verde": 54,
      "amarillo": 29,
      "rojo": 17,
-     "dias": 82
+     "dias": 83
     }
    }
   },
@@ -2036,8 +2045,8 @@
   },
   {
    "anio": 2026,
-   "dias_validos": 193,
-   "lluvia_total": 3036,
+   "dias_validos": 194,
+   "lluvia_total": 3037,
    "lluvia_media_dia": 15.7
   }
  ],
